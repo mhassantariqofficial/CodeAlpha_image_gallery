@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <h1>My Gallery</h1>
+      <p>A collection of beautiful images</p>
+    </header>
+
+    <!-- GALLERY GRID -->
+    <main>
+      <div class="gallery">
+
+        <div class="gallery-item" onclick="openLightbox(0)">
+          <img src="https://picsum.photos/seed/nature1/600/400" alt="Nature 1">
+          <div class="overlay">
+            <span>View</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(1)">
+          <img src="https://picsum.photos/seed/city1/600/400" alt="City 1">
+          <div class="overlay">
+            <span>View</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(2)">
+          <img src="https://picsum.photos/seed/tech1/600/400" alt="Tech 1">
+          <div class="overlay">
+            <span>View</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(3)">
+          <img src="https://picsum.photos/seed/nature2/600/400" alt="Nature 2">
+          <div class="overlay">
+            <span>View</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(4)">
+          <img src="https://picsum.photos/seed/city2/600/400" alt="City 2">
+          <div class="overlay">
+            <span>View</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(5)">
+          <img src="https://picsum.photos/seed/abstract1/600/400" alt="Abstract 1">
+          <div class="overlay">
+            <span>View</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(6)">
+          <img src="https://picsum.photos/seed/food1/600/400" alt="Food 1">
+          <div class="overlay">
+            <span>View</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(7)">
+          <img src="https://picsum.photos/seed/travel1/600/400" alt="Travel 1">
+          <div class="overlay">
+            <span>View</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(8)">
+          <img src="https://picsum.photos/seed/animal1/600/400" alt="Animal 1">
+          <div class="overlay">
+            <span>View</span>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+      <button class="close-btn" onclick="closeLightbox()">✕</button>
+      <button class="nav-btn prev-btn" onclick="changeImage(-1)">&#8249;</button>
+      <img id="lightbox-img" src="" alt="">
+      <button class="nav-btn next-btn" onclick="changeImage(1)">&#8250;</button>
+      <p id="lightbox-counter"></p>
+    </div>
+
+    <script src="gallery.js"></script>
+
+  </body>
+</html>
