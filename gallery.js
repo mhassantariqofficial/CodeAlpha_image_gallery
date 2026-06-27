@@ -1,4 +1,4 @@
-// Sari images ka data
+
 const images = [
   { src: "https://picsum.photos/seed/nature1/600/400",   alt: "Nature 1"   },
   { src: "https://picsum.photos/seed/city1/600/400",     alt: "City 1"     },
